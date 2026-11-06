@@ -82,6 +82,44 @@ footer strong{color:var(--text)}
 .detail-next{grid-column:1/-1;background:var(--bg);border-radius:10px;padding:17px 18px}
 .project-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
 .project-tags span{font-size:11px;background:var(--accent-light);color:var(--accent);padding:5px 9px;border-radius:6px;font-weight:700}
+
+/* Analysis case studies and contact details share the portfolio's restrained red palette. */
+.navlinks a.nav-resume{color:var(--accent)}
+.intro-actions{display:flex;gap:11px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.intro-actions .jump{margin-top:0}
+.outline-link{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);font-size:13px;font-weight:800;background:#fff}
+.outline-link:hover{background:var(--accent-light)}
+.case{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:26px}
+.case-head{display:grid;grid-template-columns:1.65fr 1fr;gap:30px;align-items:center;padding:29px 32px 24px}
+.case-eyebrow{font-size:11px;font-weight:850;letter-spacing:.14em;color:var(--accent);margin-bottom:7px}
+.case h3{font-size:clamp(24px,3vw,32px);letter-spacing:-.045em;line-height:1.2;margin-bottom:11px}
+.case p{color:var(--muted);font-size:14px;line-height:1.75;margin-bottom:13px}
+.stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.stat{padding:15px;border:1px solid var(--border);background:var(--bg);border-radius:11px}
+.stat strong{display:block;font-size:24px;line-height:1.2;color:var(--accent);letter-spacing:-.035em}
+.stat span{font-size:11px;color:var(--muted)}
+.case-gallery{padding:0 32px 28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.case-gallery a{display:block;background:#edf0f2;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.case-gallery img{width:100%;height:165px;object-fit:cover;display:block;transition:transform .2s}
+.case-gallery a:hover img{transform:scale(1.025)}
+.case-gallery small{display:block;padding:9px 11px;color:var(--muted);font-size:11px;background:#fff;font-weight:700}
+.case-body{padding:0 32px 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.case-body h4,.formula-card h4{margin:0 0 7px;font-size:13px;letter-spacing:.07em;text-transform:uppercase}
+.case-note{border-top:1px solid var(--border);padding:14px 32px;color:var(--muted);font-size:12px;background:var(--bg)}
+.formula-wrap{padding:26px 32px 30px}
+.formula{padding:18px 18px;background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;margin:13px 0 20px;overflow-x:auto}
+.formula code{font:600 clamp(13px,1.6vw,16px)/1.8 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:nowrap;color:var(--text)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:10px}
+.two-col h4{font-size:13px;margin:0 0 7px}
+.two-col p{margin:0 0 7px}
+.two-col ul{padding-left:18px;color:var(--muted);font-size:14px;line-height:1.78;margin:0}
+.contact-block{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.contact-block p{margin:5px 0 0;color:var(--muted);font-size:14px}
+.contact-links{display:flex;gap:11px;flex-wrap:wrap}
+.contact-links a{white-space:nowrap}
+@media(max-width:800px){.case-head{grid-template-columns:1fr}.case-gallery img{height:145px}.contact-block{display:block}.contact-links{margin-top:19px}}
+@media(max-width:630px){.navlinks{gap:11px}.navlinks a{font-size:10px}.navlinks a[href="#experience"]{display:none}.case-head{padding:22px 20px}.case-gallery{padding:0 20px 20px;grid-template-columns:1fr}.case-gallery img{height:auto;max-height:290px;object-fit:contain}.case-body,.two-col{grid-template-columns:1fr}.case-body{padding:0 20px 24px;gap:11px}.case-note{padding:14px 20px}.formula-wrap{padding:20px}.formula code{font-size:12px}.contact-block{padding:24px 20px}}
+
 @media(max-width:800px){.wrapper{width:calc(100% - 44px)}.intro{padding:79px 0 76px}.section{padding:70px 0}.project-image{height:240px;padding:14px}.project-content{padding:22px}.exp{padding:23px}.dialog-photo{height:285px}}
 @media(max-width:630px){.site-header{height:66px}.nav{gap:8px}.brand{font-size:12px;gap:7px}.monogram{width:28px;height:28px;font-size:10px}.navlinks{gap:13px}.navlinks a{font-size:11px}.navlinks a:first-child{display:none}.intro{padding:62px 0 65px}h1{font-size:clamp(44px,12vw,63px)}.intro-lead{font-size:18px}.intro-copy{font-size:14px}.experience-grid,.project-grid,.detail-columns{grid-template-columns:1fr}.exp{min-height:0}.section{padding:62px 0}.project-image{height:260px}.project-content{padding:21px}.detail-dialog{width:calc(100% - 14px);max-height:95vh}.dialog-inner{padding:16px}.dialog-photo{height:265px}.thumb{flex-basis:80px;width:80px;height:63px}.detail-next{grid-column:auto}footer{flex-direction:column;gap:2px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
@@ -89,7 +127,7 @@ footer strong{color:var(--text)}
 <body>
 <header class="site-header"><div class="wrapper nav">
   <a href="#intro" class="brand"><span class="monogram">FT</span>Fernando Toro</a>
-  <nav class="navlinks" aria-label="Main navigation"><a href="#intro">Intro</a><a href="#experience">Experience</a><a href="#projects">Projects</a></nav>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#analysis">Analysis</a><a class="nav-resume" href="Fernando_Toro_Resume_2027.pdf" target="_blank" rel="noopener">Résumé ↗</a><a href="#contact">Contact</a></nav>
 </div></header>
 <main>
 <section class="intro" id="intro"><div class="wrapper">
@@ -97,7 +135,7 @@ footer strong{color:var(--text)}
   <h1>Hi, I'm <span>Fernando Toro.</span></h1>
   <p class="intro-lead">I'm a junior at NYU pursuing an undergraduate degree in Mechanical Engineering with a minor in Aerospace Engineering.</p>
   <p class="intro-copy">I'm interested in renewable energy, transportation, robotics, and aerospace. I enjoy designing mechanisms and structures in CAD, exploring how they work, and turning early ideas into testable engineering concepts.</p>
-  <a class="jump" href="#experience">Explore my work <span aria-hidden="true">↓</span></a>
+  <div class="intro-actions"><a class="jump" href="#projects">Explore projects <span aria-hidden="true">↓</span></a><a class="outline-link" href="Fernando_Toro_Resume_2027.pdf" target="_blank" rel="noopener">View résumé ↗</a><a class="outline-link" href="https://www.linkedin.com/in/fernando-toro-301400302/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
 </div></section>
 <section class="section" id="experience"><div class="wrapper">
   <div class="section-kicker">01 / BACKGROUND</div><h2>Experience</h2>
@@ -158,7 +196,51 @@ footer strong{color:var(--text)}
     <div class="project-foot"><span class="progress">In progress</span><button type="button" class="project-action" data-open="aircraft">Explore project <span aria-hidden="true">↗</span></button></div>
   </div>
 </article></div>
-  <p class="project-guide">All projects are presented at their current concept/CAD stage. Calculations, simulation results, and testing data will be added once completed and verified.</p>
+  <p class="project-guide">Personal projects shown here remain in development. Below, a completed course design study includes calculated and simulated results; the turbine power model is clearly identified as theoretical.</p>
+</div></section>
+
+<section class="section" id="analysis"><div class="wrapper">
+  <div class="section-kicker">03 / ENGINEERING ANALYSIS</div><h2>Design decisions, backed by analysis.</h2>
+  <p class="section-sub">Selected engineering work showing an analytical process, design iteration, and verification against simulation where available.</p>
+  <article class="case" aria-labelledby="bar-title">
+    <div class="case-head"><div>
+      <p class="case-eyebrow">COMPLETED COURSEWORK · STRUCTURAL DESIGN</p>
+      <h3 id="bar-title">Flanged Cross-Bar: Buckling Design &amp; Simulation</h3>
+      <p>For a team buckling-design assignment, I developed and refined an ABS cross-bar with flanges and a slotted pin connection. My initial design did not meet the required buckling load, so I redesigned the cross-section and compared hand calculations with SolidWorks results.</p>
+      <p>These values are <strong>predicted buckling loads</strong> from analysis and simulation—not results from a physical destructive test.</p>
+    </div><div class="stat-grid" aria-label="Buckling analysis results">
+      <div class="stat"><strong>150 N</strong><span>Project load target</span></div>
+      <div class="stat"><strong>179 N</strong><span>Hand-calculated buckling load</span></div>
+      <div class="stat"><strong>178.09 N</strong><span>SolidWorks buckling prediction</span></div>
+      <div class="stat"><strong>36.62 g</strong><span>Simulated model mass</span></div>
+    </div></div>
+    <div class="case-gallery" aria-label="Buckling project figures">
+      <a href="assets/bar-design.jpg" target="_blank" rel="noopener"><img src="assets/bar-design.jpg" alt="Second bar design, hand sketch and full assembly" loading="lazy"/><small>01 / Cross-section and CAD assembly ↗</small></a>
+      <a href="assets/bar-cad-simulation.jpg" target="_blank" rel="noopener"><img src="assets/bar-cad-simulation.jpg" alt="SolidWorks simulation and male and female connection models" loading="lazy"/><small>02 / Simulation and connector details ↗</small></a>
+      <a href="assets/bar-calculations.jpg" target="_blank" rel="noopener"><img src="assets/bar-calculations.jpg" alt="Hand-calculation slide reporting buckling and mass comparison" loading="lazy"/><small>03 / Hand calculations and results ↗</small></a>
+    </div>
+    <div class="case-body">
+      <div><h4>Design changes</h4><p>Introduced flanges to improve resistance to bending and used a symmetrical cross-section. The assembly uses a slotted pin connection intended to simplify joining printed segments. The tradeoffs included higher material use, more complexity and corners that may concentrate stress.</p></div>
+      <div><h4>Analysis outcome</h4><p>The revised design exceeded the 150 N target by approximately 19% in hand calculations. The SolidWorks prediction of 178.09 N was within about 0.5% of the 179 N hand estimate. Calculated and modeled masses were 36.3 g and 36.62 g, respectively.</p></div>
+    </div>
+    <div class="case-note">Source: team Buckling presentation, Fernando Toro's design iteration and analysis. Figures are shown as submitted course documentation. No physical load-test result is claimed.</div>
+  </article>
+  <article class="case formula-card" aria-labelledby="turbine-analysis-title">
+    <div class="formula-wrap">
+      <p class="case-eyebrow">IN DEVELOPMENT · FLUID MECHANICS / ENERGY CONVERSION</p>
+      <h3 id="turbine-analysis-title">Compressed-Air Turbine: Shaft-Power Model</h3>
+      <p>The next engineering milestone for my turbine-generator concept is to estimate the power available at the shaft. The starting point is a steady-flow control volume around the turbine, followed by a more realistic model of pressure loss and tank blowdown.</p>
+      <div class="formula" aria-label="Ideal turbine power equation"><code>Ẇ<sub>ideal</sub> = ṁ c<sub>p</sub> T<sub>in</sub> [1 − (P<sub>out</sub>/P<sub>in</sub>)<sup>(γ−1)/γ</sup>]</code></div>
+      <p>For an ideal gas undergoing adiabatic, isentropic expansion with negligible changes in kinetic and potential energy, this gives an <strong>ideal power limit</strong>. A first-pass shaft estimate is <strong>Ẇ<sub>shaft</sub> ≈ η<sub>t</sub> η<sub>m</sub> Ẇ<sub>ideal</sub></strong>, using turbine and mechanical efficiencies. It is not yet a measured or validated output.</p>
+      <div class="two-col"><div><h4>Inputs still to be established</h4><ul><li>Absolute turbine inlet and outlet pressures</li><li>Inlet air temperature and mass-flow rate</li><li>Turbine and mechanical efficiencies</li><li>Nozzle losses and changing tank pressure</li></ul></div><div><h4>What comes next</h4><p>Use nozzle and plenum geometry to estimate flow behavior, check available shaft power at representative conditions, and model the decline in power as the pressurized tanks discharge. Later, compare predictions with prototype measurements.</p></div></div>
+    </div>
+    <div class="case-note">Theory only · No numerical power figure is published until the operating conditions and assumptions are defined.</div>
+  </article>
+</div></section>
+<section class="section" id="contact"><div class="wrapper">
+  <div class="section-kicker">04 / CONTACT &amp; RÉSUMÉ</div><h2>Let's connect.</h2>
+  <p class="section-sub">Interested in mechanical design, aerospace, robotics, and product development opportunities.</p>
+  <div class="contact-block"><div><strong>Fernando M. Toro</strong><p>Mechanical Engineering · New York University<br/><a href="mailto:fmt3930@nyu.edu">fmt3930@nyu.edu</a></p></div><div class="contact-links"><a class="jump" style="margin-top:0" href="Fernando_Toro_Resume_2027.pdf" target="_blank" rel="noopener">View résumé ↗</a><a class="outline-link" href="https://www.linkedin.com/in/fernando-toro-301400302/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="outline-link" href="https://github.com/fefi288" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
 </div></section>
 </main>
 <footer class="wrapper"><span><strong>Fernando Toro</strong> · Engineering Portfolio</span><span>NYU · Mechanical Engineering / Aerospace</span></footer>
